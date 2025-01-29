@@ -6,18 +6,18 @@ SELECT "Olá Mundo";
 -- 01.1 A função CONCAT realiza a concatenação de três strings
 SELECT CONCAT("olá", " 2024 ", "mundo");
 -- 01.2 A função LOWER converte as letras maiúsculas em letras minúsculas SELECT LOWER("Converte TUDO para minúsculas");
-select LOWER("Converte Tudo para minúsculas");
+SELECT LOWER("Converte Tudo para minúsculas");
 
 -- 01. 3 A função LPAD (left pad) acrescenta zeros (terceiro argumento) à string "123"
- SELECT LPAD('123', 4, '0');
+SELECT LPAD('123', 4, '0');
 
 -- 01.4 Exibe string com espaços nas extremidades 
 SELECT ' string com espaços nas extremidades ';
 -- 01.5 A função TRIM remove os espaços em branco das extremidades da string
-select TRIM(' string com espacos nas extremidades ');
+SELECT TRIM(' string com espacos nas extremidades ');
 
 -- 01.6 A função REGEXP_SUBSTR procura um determinado padrão (segundo argumento) numa string informada (primeiro argumento)
- SELECT REGEXP_SUBSTR('Tem um número 12 no meio desta string', '\\d+');
+SELECT REGEXP_SUBSTR('Tem um número 12 no meio desta string', '\\d+');
 -- 02. Criando nova tabela
 CREATE TABLE clientes_experimentos (
 id INT PRIMARY KEY,
@@ -28,8 +28,8 @@ telefone VARCHAR(20)
 
 -- 02.1 carga de dados
 INSERT INTO clientes_experimentos (id, nome_completo, email, telefone) VALUES
-(1, 'João Pedro Silva', 'joao.pedro@gmail.com', '(11) 1234-5678'),
-(2, 'Maria Luiza Oliveira', 'maria.luiza@yahoo.com', '(21) 9876-5432'),
+ (1, 'João Pedro Silva', 'joao.pedro@gmail.com', '(11) 1234-5678'),
+ (2, 'Maria Luiza Oliveira', 'maria.luiza@yahoo.com', '(21) 9876-5432'),
  (3, 'Carlos Eduardo Santos', 'carlos.eduardo@hotmail.com', '(31) 1111-2222'),
  (4, 'Ana Beatriz Costa', 'ana.beatriz@gmail.com', '(41) 3333-4444'),
  (5, 'Luís Felipe Pereira', 'luis.felipe@yahoo.com', '(51) 5555-6666'),
@@ -44,7 +44,7 @@ INSERT INTO clientes_experimentos (id, nome_completo, email, telefone) VALUES
  (14, 'Mestre Sprinter', 'mestre.sprinter@gmail.com', '(41) 3333-4444'),
  (15, 'Dr. Coorper', 'dr.coorper@yahoo.com', '(51) 5555-6666');
  
- select * from clientes_experimentos;
+select * from clientes_experimentos;
 -- Consultando registros usando filtro where e expressão like
 SELECT * from clientes_experimentos where nome_completo LIKE 'Dr.%';
- SELECT * from clientes_experimentos where nome_completo LIKE '%ana%';
+SELECT * from clientes_experimentos where nome_completo LIKE '%ana%';
