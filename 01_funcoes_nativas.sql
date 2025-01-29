@@ -1,5 +1,3 @@
-create database teste
-
 -- 1. Criando tabela medicoes_experimento CREATE TABLE medicoes_experimento 
 create table medicoes_experimento (
 repeticao INT,
